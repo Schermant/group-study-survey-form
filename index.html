@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Group Study Register Form
+        </h1>
+        <p id="description">Please fill in the form below to apply, we will reach out to you as soon as possible.</p>
+        <form method="post" id="survey-form">
+        <div class="container">
+            <div class="main-column">
+            <div class="form-section">
+                <label id="name-label">Name
+                    <input class='text' type="text" id="name" required placeholder="Enter your name">
+                </label>
+            </div>
+            <div class="form-section">
+                <label id="email-label">Email
+                    <input class='text' type="email" id="email" required placeholder="Enter your Email">
+                </label>
+            </div>
+            <div class="form-section">
+                <label id="number-label">Age<span> (optional)</span>
+                    <input class='text' type="number" id="age" required placeholder="Age" min="
+                    3" max="120">
+                </label>  
+            </div>
+            <div class="form-section">
+                <label for="role">Which option best describes your current occupation?
+                    <select id="dropdown" required>
+                        <option value="" class="placeholder">Select current role</option>
+                        <option value="1">Student</option>
+                        <option value="2">Teacher</option>
+                        <option value="3">Full Time Learner</option>
+                        <option value="4">Full Time Job</option>
+                        <option value="5">Other</option>
+                        <option value="6">Prefer not to say</option>
+                    </select>
+                </label>  
+            </div>
+            <div class="form-section">
+                <label for="role">Which role would you like to apply for?
+                    <label for="listener"><input type="radio" value="listener" id="listener" name="role" checked> Listener</label>
+                    <label for="learner"><input type="radio" value="learner" id="learner" name="role"> Learner</label>
+                    <label for="adviser"><input type="radio" value="adviser" id="adviser" name="role"> Adviser</label>
+                </label>
+            </div>
+            <div class="form-section">
+                <label for="favorite">Which subject would you like to participate in?
+                    <select id="role" required>
+                        <option value="" class="placeholder">Select an option</option>
+                        <option value="1">Information Technology</option>
+                        <option value="2">Physics</option>
+                        <option value="3">Literatures</option>
+                        <option value="4">History</option>
+                        <option value="5">Memetics</option>
+                    </select>
+                </label>
+            </div>          
+            <div class="form-section">
+                <label>From where did you learn about us?<span> (Check all that apply)</span></label>
+                <label for="prefer">
+                    <input type="checkbox" name="prefer" value="conversation"> Conversations with friends/family/etc.
+                </label>
+                <label for="prefer">
+                    <input type="checkbox" name="prefer" value="online-ads"> Our online advertisements
+                </label>
+                <label for="prefer">
+                    <input type="checkbox" name="prefer" value="social-media"> Social media platforms <span>(Youtube/Twitter/etc.)</span>
+                </label>
+                <label for="prefer">
+                    <input type="checkbox" name="prefer" value="invitation"> Our invitation email
+                </label>
+                <label for="prefer">
+                    <input type="checkbox" name="prefer" value="self-research"> Through your research
+                </label>
+                <label for="prefer">
+                    <input type="checkbox" name="prefer" value="other"> Other
+                </label>
+            </div>
+            <div class="form-section">
+                <label for="comment">Any additional information would you like to tell us?
+                        <textarea class='text' placeholder="Enter your comment here..."></textarea>
+                </label>
+            </div>
+            <div class="form-section">
+                <input type="submit" id="submit" value='Submit'>
+            </div>
+            </div>
+        </div>
+        </form>
+    </body>
+    <footer>
+        <p class="footer">Sterling Comprehension Program &copy; 1979</p>
+    </footer>
+</html>
